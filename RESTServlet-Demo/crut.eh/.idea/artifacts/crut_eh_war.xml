@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="crut.eh:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="com.rizal.demo.api.war">
+      <element id="artifact" artifact-name="crut.eh:war exploded" />
+    </root>
+  </artifact>
+</component>

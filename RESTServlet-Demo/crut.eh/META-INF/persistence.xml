@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<persistence version="2.1">
+    <persistence-unit name="Entities">
+
+        <class>services.models.Anggota</class>
+        <class>services.models.Buku</class>
+        <class>services.models.Peminjaman</class>
+        <class>services.models.PeminjamanDetail</class>
+        <class>services.models.Pengembalian</class>
+    </persistence-unit>
+</persistence>

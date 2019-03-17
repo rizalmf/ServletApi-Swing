@@ -1,0 +1,49 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <!-- ini start tmbah sendiri-->
+  <servlet>
+    <servlet-name>saveAnggotaServlet</servlet-name>
+    <servlet-class>services.servlets.SaveAnggotaServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>deleteAnggotaServlet</servlet-name>
+    <servlet-class>services.servlets.DeleteAnggotaServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>getListAnggotaServlet</servlet-name>
+    <servlet-class>services.servlets.GetListAnggotaServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>getAnggotaByKepoServlet</servlet-name>
+    <servlet-class>services.servlets.GetAnggotaByKepoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>saveAnggotaServlet</servlet-name>
+    <url-pattern>/save</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>deleteAnggotaServlet</servlet-name>
+    <url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>getListAnggotaServlet</servlet-name>
+    <url-pattern>/get_list</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>getAnggotaByKepoServlet</servlet-name>
+    <url-pattern>/get_list_by_kepo</url-pattern>
+  </servlet-mapping>
+  <!-- ini end tmbah sendiri :D-->
+  <session-config>
+    <session-timeout>
+      30
+    </session-timeout>
+  </session-config>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
